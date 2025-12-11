@@ -8,3 +8,6 @@ version = "0.1.0"
 description = "gRPC Protos for Text Processor"
 authors = [{name = "Your Name", email = "your.email@example.com"}]
 dependencies = []
+
+[tool.setuptools]
+packages = ["grpc_protos"]
