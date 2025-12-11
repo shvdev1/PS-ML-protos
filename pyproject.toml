@@ -1,13 +1,18 @@
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
 
-[project]
-name = "grpc-protos"
+[tool.poetry]
+name = "PS-ML-protos"
 version = "0.1.0"
-description = "gRPC Protos for Text Processor"
-authors = [{name = "Your Name", email = "your.email@example.com"}]
-dependencies = []
+description = "A package for gRPC files"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
 
-[tool.setuptools]
-packages = ["grpc_protos"]
+[tool.poetry.dependencies]
+python = "^3.13"
+grpcio = "^1.76.0"
+grpcio-tools = "^1.76.0"
+protobuf = "^6.33.2"
+setuptools = "^80.9.0"
+typing-extensions = "^4.15.0"
